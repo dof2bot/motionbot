@@ -2,7 +2,7 @@
 
 # motionbot
 
-**motionbot** is development device which can be used for **[HWIL](https://en.wikipedia.org/wiki/Hardware-in-the-loop_simulation)**.
+**motionbot** is development device which can be used for **[numerical control](https://en.wikipedia.org/wiki/Numerical_control)**.
 
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
