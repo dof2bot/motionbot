@@ -1,0 +1,25 @@
+name: motionbot-desktop C++ CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install GTK--
+      id: install_gtkmm
+      run: |
+        sudo apt install libgtkmm-3.0-dev
+    - name: make all
+      id: gnu_make_all
+      run: |
+        cd sw/motionbot-desktop/build
+        make all
+    - name: make clean
+      id: gnu_make_clean
+      run: |
+        cd sw/motionbot-desktop/build
+        make clean
